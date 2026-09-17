@@ -1,0 +1,44 @@
+---
+title: SynxPass
+description: Conceptual identity and access path used by Morph Space. Not a protocol specification.
+status: draft
+---
+
+SynxPass is associated with identity, authentication, and network access in the currently known implementation. It is part of Synx Tools and is used by Morph Space.
+
+This page documents only what the source states. It does not define a token format, signing algorithm, claims set, or key-management scheme.
+
+<SynxPassFlow />
+
+## What is stated
+
+- SynxPass is a token-based system.
+- The endpoint needs to refresh the token every three minutes to send data to the network.
+- After registration, a user may participate in RTW and join services by getting access to ghosts.
+- Morph Space uses Synx Pass for authorization.
+- Access can be revoked using a token revocation endpoint.
+- Session termination can be activated through Synx runtime BIOS.
+- Authentication choice is architecturally optional; other token systems can be used in an RTW network.
+
+## Topics reserved for later specification
+
+The following questions belong in eventual Synx Pass documentation. They are listed here so the knowledge base can grow without inventing answers:
+
+- How a SynxPass is created
+- How identity is established
+- How tokens are generated
+- What information a token represents
+- How tokens are validated
+- How permissions are represented
+- How tokens interact with domains and data channels
+- Token lifecycle, expiration, and renewal
+- Security model and trust model
+- Credential compromise procedures
+- Machine and AI-agent identities
+- Support for existing identity providers
+
+<SpecStatus status="pending">
+  The Synx Pass FAQ in the source is unanswered. Canonical operational answers should live in Synx documentation, with conceptual links from RealTimeWeb.org.
+</SpecStatus>
+
+<EcosystemLink to="synx" />

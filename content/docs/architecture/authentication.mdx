@@ -1,0 +1,19 @@
+---
+title: Authentication
+description: Optional authentication systems; Morph Space currently uses SynxPass.
+status: draft
+---
+
+MAD treats the authentication system as optional when constructing an RTW network. Currently there is only one known authentication system named Synx Pass that has been implemented.
+
+Synx Pass is a token based system where the endpoint needs to refresh the token every three minutes to be able to send data to the network. Once a user has been registered in SynxPass they are allowed to participate in RTW and become members to various services by getting access to ghosts.
+
+Morph Space is using Synx Pass for authorization.
+
+Access can be revoked by using a token revocation endpoint. Time-based revocation policies have been set and terminating user sessions can be activated through Synx runtime bios.
+
+<SynxPassFlow />
+
+<SpecStatus status="proposal">
+  Token format, signing, claims, and key management are not specified in the source. Do not treat this page as a cryptographic specification.
+</SpecStatus>

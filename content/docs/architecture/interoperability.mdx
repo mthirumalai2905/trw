@@ -1,0 +1,30 @@
+---
+title: Interoperability
+description: Normalizer, materializer, kernelizer, and local data models.
+status: draft
+---
+
+In the Semantic Web there is a principle about linking a target data source and turning that data to fit the local data model. By doing so, links and data sources are transformed (morphed) to work with the local data structure. When the local data model becomes a target for linking, the same principle applies for the one who sets up the link.
+
+If every service follows these principles the network as a whole becomes more sustainable to participate with intelligence.
+
+In the MAD model this principle is implemented as part of the horizontal distribution model:
+
+- To link a data source and morph the data to fit the local data model is called **normalizer** (to normalize) the data.
+- If the service offers to make changes to the data after the local data model has been updated it is called **materializer** (to materialize).
+
+<DataChannelMorph />
+
+## Kernelizer
+
+For endpoints and their ghosts, interoperability is unlimited since kernelizer allows the endpoint or client to receive a self-contained message before the data stream. That allows the application-layer owner to send a message to the receiver before the data-layer stream. The client can build its application and interface without a preinstalled program.
+
+This self-executed client then becomes dynamic and can set up its own protocol and template for managing its own data. It also enables the endpoint to be distributed as an empty container where the program (kernelizer) and data (morphing) will be deployed dynamically at a later stage.
+
+## Communication formats in the known implementation
+
+The communication format currently supported by Synx BIOS is XML and JSON. When a client endpoint connects it can receive data in XML or in JSON format. Default is XML but by issuing a synx command it can be set to JSON. There is no need to drop the connection; the format can be altered at runtime by another client that has domain ownership.
+
+RTW is protocol independent. The service owner decides his own protocol. Information about how data is structured and the data model description can be found on each micropage.
+
+A micropage is a mini description of the service that the service owner can use to describe the service and data model. Any service provider needs to describe its own data schema availability.

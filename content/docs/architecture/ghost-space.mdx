@@ -1,0 +1,35 @@
+---
+title: Ghost Space
+description: Shared state between independently controlled layers and a bijective endpoint relationship.
+status: published
+---
+
+MAD introduces a shared state model called Ghost Space.
+
+Within Ghost Space, a Ghost is a shared-memory representation of a network resource. It provides a common state through which the four layers can observe and process authorized updates.
+
+Each layer can maintain its own state and logic in relation to the Ghost without assuming ownership of the complete endpoint or the other layers.
+
+<GhostBijection />
+
+## Bijective relationship
+
+The actual endpoint (such as a sensor, actuator, AI agent, application, device, domain resource, or user-controlled data source) has a unique bijective relationship with its Ghost.
+
+This means that:
+
+- The endpoint has one corresponding Ghost.
+- The Ghost represents one corresponding endpoint.
+- The relationship is uniquely addressable from both sides.
+- Authorized state changes can be propagated through the relationship.
+- Each layer can process the update according to its own role and permissions.
+
+Ghost Space therefore functions as the shared coordination environment between infrastructure, security, applications, and resource owners. It allows these layers to cooperate around the same live network resource while remaining independently controlled.
+
+## Identity and protection
+
+A ghost is a kind of proxy for the network resource. Ghost operates in multiple layers and can be accessed by the other stack layers at runtime. Each unique network resource is bijective connected to its own ghost. The ghost provides identity, behavior and context when an active connection is present.
+
+## Ownership across layers
+
+A ghost is represented in all stack layers. Ownership of the ghost in the application layer belongs to the service owner. Ownership of the data layer can belong to the user after transfer of the `ghostId`.

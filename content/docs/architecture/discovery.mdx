@@ -1,0 +1,15 @@
+---
+title: Discovery
+description: Distributed stack, name resolution, and current transport in the known implementation.
+status: draft
+---
+
+In MAD, the vertical communication stack layers are segregated. The stack is also distributed to the endpoint on activation. The endpoint prior to the communication does not need to contain any protocol, libraries or pre-defined program behaviour.
+
+Current implementation of MAD is done by Synx.tools and the marketplace Morph.Space. This implementation is based on TCP/IP for creating the stateful connection and HTTPS and websocket for the protocol. This means that any endpoint can connect using native TCP connect and send/receive data using HTTPS or websocket.
+
+<SpecStatus status="proposal">
+  A general discovery and name-resolution specification, including how RTW names relate to conventional DNS, is not provided as public copy yet. Synx DNS is documented as a planned Synx product FAQ, not as an RTW protocol here.
+</SpecStatus>
+
+<EcosystemLink to="synx" />

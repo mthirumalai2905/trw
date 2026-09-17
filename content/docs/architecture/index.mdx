@@ -1,0 +1,42 @@
+---
+title: Morphic Architecture Design
+description: RTW is based on MAD, an architectural model with four independently controlled layers.
+status: published
+---
+
+The Real-Time Web is based on Morphic Architecture Design (MAD), an architectural model first introduced by technology inventor Paal Kristian Levang in 2008.
+
+Like the World Wide Web, RTW uses semantic principles to describe resources and their relationships. However, RTW extends beyond the document and application layer by coordinating several concurrent layers of the communication architecture.
+
+MAD defines a minimum of four logical ownership and operational layers.
+
+<MadLayers />
+
+## Independent control
+
+In the conventional Web, standards primarily define how resources are identified, described, requested, and presented at the Web and application layers. Identity, sessions, payments, and access control are then frequently implemented separately by each application or domain.
+
+MAD proposes a multi-layer network stack in which the four logical layers can be configured and updated independently at runtime.
+
+A change in one layer does not need to redefine the entire network relationship. Instead, the semantics, data structure, access rules, and transformation logic associated with a resource can evolve while its fundamental network identity and relationships remain intact.
+
+This design allows different participants to control their respective layers:
+
+- Infrastructure providers control their infrastructure.
+- Network and security providers manage connectivity and trust.
+- Service developers own their applications and transformation logic.
+- Resource owners control access to their data and endpoints.
+
+The objective is to preserve ownership and privacy at each layer without preventing the other participants from performing the functions necessary to deliver and transform data.
+
+## A simple example
+
+Consider sending a message to a friend. All four layers participate, but they do not necessarily have the same owner.
+
+<MessageExample />
+
+## Ghost Space
+
+MAD introduces a shared state model called Ghost Space. The actual endpoint has a unique bijective relationship with its Ghost. See [Ghost Space](/docs/architecture/ghost-space).
+
+<GhostBijection />

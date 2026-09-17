@@ -1,0 +1,19 @@
+---
+title: Network and Security Layer
+description: Addressing, identity, authentication, authorization, trust, and secure communication.
+status: published
+---
+
+The network and security layer contains the mechanisms responsible for addressing, identity, authentication, authorization, trust, and secure communication.
+
+<MadLayers />
+
+Network and security providers manage connectivity and trust. MAD has been designed using roles and responsibility patterns, so what kind of authentication system is used is optional when constructing an RTW network.
+
+Currently there is only one known valid implementation in use, named SynxPass (part of Synx Tools), used by Morph Space. See [SynxPass](/docs/architecture/synxpass).
+
+The MAD network does not natively persist data into databases or filesystems. It is designed as a distributed machine network. The network is tokenized and is limited to the system that issues the token and how this is mapped to the user or network resource. Any token system that generates a token for identity can be used.
+
+<SpecStatus status="proposal">
+  Signing algorithms, key management, and a canonical token format are not specified here. Architecture proposal only.
+</SpecStatus>

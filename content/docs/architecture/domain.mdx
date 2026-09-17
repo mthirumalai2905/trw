@@ -1,0 +1,19 @@
+---
+title: Domain and Application Layer
+description: Domains, services, applications, and transformation logic.
+status: published
+---
+
+The domain and application layer contains the domains, services, applications, and transformation logic that create functionality and determine how authorized data is processed.
+
+<MadLayers />
+
+Service developers own their applications and transformation logic. Independently from the data layer, ownership of a service can be transferred to another person. The service itself is also a ghost in the application layer.
+
+Ghost id zero is the service (application-layer ghostid). A service owner can give away the service by transferring ghost id zero to another person.
+
+The service owner has always access to a local copy of data related to the application layer. This includes morphed data and command data.
+
+<SpecStatus status="proposal">
+  Domain naming records, micropage schema language, and service transfer protocol are not specified in the current source.
+</SpecStatus>

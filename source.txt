@@ -1,0 +1,687 @@
+Source: Web Content document (2026)
+Scope: Site structure, conceptual copy, FAQ, and editorial guidance for RealTimeWeb.org, Morph.Space, and Synx tools.
+
+## Status legend
+
+Answered — question has a written answer in the source.
+Pending — listed for the site but no answer yet, or only a placeholder.
+Draft — marked as draft in the source; needs team review/approval before publishing.
+Needs team approval — called out in the source as needing a prominent clarification or editorial decision.
+
+## Document overview
+
+The source organizes public content across three locations. Avoid duplicating long answers across them.
+
+RealTimeWeb.org
+Answers: What RTW is and how it works
+Tone: Neutral and specification-oriented
+Main action: Understand or implement RTW
+
+Morph.Space
+Answers: What users can do and how they join
+Tone: Accessible and commercial
+Main action: Create an account or domain
+
+Synx documentation
+Answers: How each tool is configured and operated
+Tone: Technical and procedural
+Main action: Administer the network
+
+Help Center
+Answers: Troubleshooting and account support
+Tone: Direct and task-oriented
+Main action: Resolve a problem
+
+Canonical homes for questions
+
+- Conceptual questions belong on RealTimeWeb.org.
+- Account, marketplace and onboarding questions belong on Morph.Space.
+- Configuration and operational questions belong in Synx documentation.
+
+On Morph Space, a question such as “What is the Real Time Web?” can receive a two-sentence answer followed by: Learn more about the architecture and specifications at RealTimeWeb.org.
+
+Every FAQ answer should ideally have three levels:
+
+1. A direct answer in the first sentence.
+2. A short explanation of two or three sentences.
+3. A link to the relevant guide or specification.
+
+## Part 1. RealTimeWeb.org — concept and network specification
+
+Primary audience: architects, developers, researchers, universities, standards organizations, technology partners and investors.
+
+Purpose: Explain what Real Time Web is, why it exists, how the network works and how implementations can remain compatible.
+
+This site should feel neutral, technical and educational — not like a conventional product sales page.
+
+### Recommended main section: Introduction to the Real-Time Web
+
+### A Real-Time Web Framework for Internet of Everything Systems
+
+The Real-Time Web (RTW) introduces a new architecture for connecting, transforming, and exchanging live data across the Internet. It is designed to enable machine automation and addressing Internet of Everything including physical devices, virtual resources, software services, AI agents, sensors, actuators, and people for them to participate in the same connected ecosystem.
+
+The original World Wide Web was primarily designed for publishing and sharing information such as text, images, documents, and video. The Semantic Web later extended this model by making information more structured and machine-readable.
+
+The Real-Time Web takes the next step. It introduces a live, bidirectional linking model that allows network resources to be connected directly to one another. Instead of treating data as static content retrieved from a website, RTW treats live data sources and network resources as addressable participants in the Web.
+
+This makes it possible to connect almost any physical or virtual resource to live services through a heterogeneous and user-controlled network architecture.
+
+### From hyperlinks to live, bidirectional relationships
+
+A conventional hyperlink points from one resource to another. The relationship is normally one-way: the source knows where the link points, but the target does not necessarily know which resources link to it.
+
+RTW extends this concept by introducing a bidirectional and bijective relationship between network resources. In this model, each participating endpoint has a unique corresponding representation in the network. The relationship can therefore be addressed and maintained from both sides.
+
+This enables data to flow directly from its live source to an authorized receiving service, application, device, or user instance.
+
+Rather than copying all data into a centrally controlled platform, RTW is designed to keep data associated with the resource and domain where it was generated. The owner can determine whether the resource is available, who may access it, and under which conditions it may be used.
+
+Applications may process, transform, and combine authorized data into new contexts and services. The application provider controls the transformation logic, while the data owner retains control over access to the original source. This separation supports innovation without requiring the creator of a service to take ownership of the underlying data.
+
+RTW therefore provides a foundation for:
+
+- Live and bidirectional data exchange
+- Directly addressable physical and virtual resources
+- Distributed machine intelligence
+- User-controlled access to data
+- Data monetization
+- Interoperability across different systems and resource types
+- Reduced dependence on centralized data platforms
+
+### A framework for the Internet of Everything
+
+The Real-Time Web is intended to provide a more flexible way to build Internet of Everything systems.
+
+Today, sensor data is commonly collected through proprietary APIs and middleware before being copied into databases or cloud platforms. Applications must then request the stored data through platform-specific interfaces. This creates additional infrastructure, repeated integrations, duplicated data, and dependency on intermediaries.
+
+RTW proposes an alternative. Live data channels can connect the original data source directly to the appropriate web service, application, AI agent, device, or web page for a particular user instance.
+
+The Real-Time Web does not need to replace the World Wide Web. It can operate alongside it in symbiosis. The conventional Web remains well suited to documents, published information, and media, while RTW adds a dynamic network for live resources, machine interaction, and continuously changing data.
+
+Together, these models can support the development of more intelligent, responsive, and interoperable services.
+
+### Figure 3-1: The Real-Time Web concept
+
+Figure 3-1 illustrates how the Real-Time Web connects the digital Web to the physical world through a Bijective Network System.
+
+Dynamic data channels connect Internet of Everything resources directly to the appropriate service, application, or web page for a specific user instance. The resulting network operates concurrently with the World Wide Web, adding live, bidirectional communication and enabling the creation of new intelligent services.
+
+Note: The figure itself is in the source PDF and is not reproduced here.
+
+### Vision and principles
+
+### Eternal widespread ownership of the Web
+
+We see the Web as the world’s largest marketplace and one of humanity’s most important platforms for communication, creativity, and innovation.
+
+We believe the Web should reward and protect the people and organizations that create its value. Individuals, developers, device owners, service providers, and domain owners should have meaningful control over the resources they contribute to the network — and a fair opportunity to benefit from what they create.
+
+Our guiding principle is: Eternal widespread ownership of the Web.
+
+This means building a Web that cannot be permanently captured or controlled by a small number of centralized platforms. Ownership, intelligence, access control, and economic opportunity should remain distributed among the participants in the network.
+
+RTW seeks to upgrade the Web by adding new dimensions of live communication, resource ownership, machine interaction, and value exchange — while preserving the open and decentralized qualities that made the Web successful.
+
+### Limitations of today’s Web architecture
+
+The World Wide Web is highly effective for publishing and retrieving information, but it was not originally designed to coordinate billions of continuously changing sensors, actuators, machines, AI agents, and autonomous services.
+
+Several limitations become apparent when the Web is applied to these use cases:
+
+- Hyperlinks are primarily one-way relationships.
+- Live bidirectional communication requires additional technologies.
+- Sessions, identity, authentication, and trust are repeatedly implemented by individual services.
+- Resource ownership and access control are often delegated to centralized platforms.
+- Data is frequently copied from its source and stored by intermediaries.
+- APIs are commonly designed for a particular provider, application, or data model.
+- Integrating heterogeneous systems requires extensive middleware and custom development.
+
+APIs have made machine-to-machine communication possible across many different systems. However, an API normally exposes a predefined interface controlled by a particular service provider. Consumers must adapt to that interface, authenticate with that provider, and rely on the provider’s infrastructure and data model.
+
+As the number of connected resources grows, this approach can produce a fragmented landscape of APIs, databases, authentication systems, cloud platforms, and proprietary integrations.
+
+RTW addresses these limitations by proposing a common architecture for linking sensors, actuators, services, AI systems, physical devices, and virtual resources within a heterogeneous network space.
+
+A heterogeneous network is not controlled by a single entity. It evolves continuously as independent participants connect and manage their own domains and services. Each participant contributes to a collective, self-growing ecosystem while retaining control over its own resources.
+
+This gives creators and developers the freedom to build new services without requiring the entire network to adopt one vendor, one data model, or one centralized platform.
+
+### The RTW architecture
+
+### Morphic Architecture Design
+
+The Real-Time Web is based on Morphic Architecture Design (MAD), an architectural model first introduced by technology inventor Paal Kristian Levang in 2008.
+
+Like the World Wide Web, RTW uses semantic principles to describe resources and their relationships. However, RTW extends beyond the document and application layer by coordinating several concurrent layers of the communication architecture.
+
+MAD defines a minimum of four logical ownership and operational layers:
+
+1. Infrastructure layer
+The physical or virtual infrastructure that provides processing, connectivity, storage capacity where required, and energy to sustain network operation.
+2. Network and security layer
+The mechanisms responsible for addressing, identity, authentication, authorization, trust, and secure communication.
+3. Domain and application layer
+The domains, services, applications, and transformation logic that create functionality and determine how authorized data is processed.
+4. Resource and ownership layer
+The person, organization, machine, or device that generates or owns the resource and controls whether it may be accessed or shared.
+
+### A simple example
+
+Consider sending a message to a friend.
+
+1. Physical or virtual infrastructure is required to operate the devices and transport the message. This can include devices, routers, network equipment, and computing resources.
+2. The participants must be identified and authenticated. Security mechanisms must establish trust, protect the communication, and ensure that the message reaches the intended recipient.
+3. An application or service must construct, process, send, and receive the message.
+4. The sender creates and owns the message and decides to share it with a particular recipient.
+
+All four layers participate in the communication, but they do not necessarily have the same owner. The hardware provider, network operator, application developer, and end user may all be independent participants with different responsibilities and interests.
+
+### Independent control across four layers
+
+In the conventional Web, standards primarily define how resources are identified, described, requested, and presented at the Web and application layers. The underlying networking infrastructure is provided through technologies and standards operated by hardware manufacturers, telecommunications providers, Internet service providers, and network operators.
+
+Identity, sessions, payments, and access control are then frequently implemented separately by each application or domain. The result is millions of independent login systems, user accounts, payment integrations, and proprietary trust mechanisms.
+
+MAD proposes a multi-layer network stack in which the four logical layers can be configured and updated independently at runtime.
+
+A change in one layer does not need to redefine the entire network relationship. Instead, the semantics, data structure, access rules, and transformation logic associated with a resource can evolve while its fundamental network identity and relationships remain intact.
+
+This design allows different participants to control their respective layers:
+
+- Infrastructure providers control their infrastructure.
+- Network and security providers manage connectivity and trust.
+- Service developers own their applications and transformation logic.
+- Resource owners control access to their data and endpoints.
+
+The objective is to preserve ownership and privacy at each layer without preventing the other participants from performing the functions necessary to deliver and transform data.
+
+### Ghost Space and shared state
+
+MAD introduces a shared state model called Ghost Space.
+
+Within Ghost Space, a Ghost is a shared-memory representation of a network resource. It provides a common state through which the four layers can observe and process authorized updates.
+
+Each layer can maintain its own state and logic in relation to the Ghost without assuming ownership of the complete endpoint or the other layers.
+
+The actual endpoint — such as a sensor, actuator, AI agent, application, device, domain resource, or user-controlled data source — has a unique bijective relationship with its Ghost.
+
+This means that:
+
+- The endpoint has one corresponding Ghost.
+- The Ghost represents one corresponding endpoint.
+- The relationship is uniquely addressable from both sides.
+- Authorized state changes can be propagated through the relationship.
+- Each layer can process the update according to its own role and permissions.
+
+Ghost Space therefore functions as the shared coordination environment between infrastructure, security, applications, and resource owners. It allows these layers to cooperate around the same live network resource while remaining independently controlled.
+
+## Draft architecture notes
+
+DRAFT — needs team approval
+The following subsections were marked as draft in the source. Treat them as working notes, not final published copy.
+
+### Network topology
+
+The horizontal network topology also differs slightly from traditional Linked Data and request-response models. The Morphic Architecture Design (MAD) focuses on constructing data channels from data sources that have been morphed along the linking path.
+
+Each service or node in the linking path operates on local data structures and are only able to persist and access data at local context. This means that how data is morphed or used in the linking path is unknown outside the local service/domain.
+
+When constructing a link against a target data source, this can be done from your local service against a secondary service whose data structure has been publicly announced. There is no centralized API or database in use when building RTW services.
+
+The linking path can be complex and only when the ghost at the endpoints is owned by the same user, will the data be consumed and received at the endpoint.
+
+### Identity and addressing
+
+There is no centralized API or database in use when building RTW services. The linking path can be complex and only when the ghost at the endpoints is owned by the same user, will the data be consumed and received at the endpoint.
+
+When ghosts are allocated for the first time, all allocated ghosts are owned by the service owner. Once a new user has been registered to the service the service owner can transfer the ghost id to the user. When the user approves the transfer the user now controls the data layer of the specific ghost.
+
+Likewise the service itself is also a ghost in the application layer. So independently from the data layer the ownership of the service can also be transferred to another person. There are four layers of ownership in the vertical communication stack layers that independently from each other can be changing ownership.
+
+MAD has been designed using roles and responsibility patterns, so what kind of authentication system that is used is optional when constructing a RTW network. Currently there is only one valid implementation in use named SynxPass (part of Synx Tools) that is used by Morph Space.
+
+### Domains and network resources
+
+MAD is a bijective network system that allows anything to be connected. This means physical or virtual network resources can be connected. Even an endpoint without any implementation that is able to keep a connection alive can receive program execution and data from his ghost.
+
+This kernelazation process allows empathy devices to connect and get their intelligence/program once activated. This also enables AI agents to activate the endpoint and control the behavior remotely. The ownership of the ghost determines which ghost layer can be configured at runtime.
+
+In practice any object can be a participant in the heterogeneous network without any library or deployment prior to connecting. The ghostID can be mapped to the mac address and there will be a bijective relationship between the object and its ghost.
+
+### Real-time data channels
+
+Data channels is a way to explain how a linking path is used to collect various data sources into a channel of data. One way to exemplify this is that you create a service that collects temperature from various manufacturers of temperature sensors. By linking to various temperature sensor services you collect potential temperature reading from different sensors that update their local ghosts.
+
+When a service owner is morphing a user's ghost into his primary service, the data that is collected for that specific user is available in the data channel of the user primary ghost of the local service. Since the user has ownership in both ends of the network value chain the data can be consumed by the endpoint that is bijective connected to the specific ghosts.
+
+Only data with a valid morphed ghost is to receive data.
+
+### Discovery and name resolution
+
+In MAD, the vertical communication stack layers are segregated. The stack is also distributed to the endpoint on activation. The endpoint prior to the communication does not need to contain any protocol, libraries or pre-defined program behaviour.
+
+If an identified user owns and controls the whole stack of his domain he also controls ownership of allocated ghosts for all endpoints connecting against his domain address space.
+
+Current implementation of MAD is done by Synx.tools and the marketplace Morph.Space. This implementation is based on TCP/IP for creating the stateful connection and HTTPS and websocket for the protocol. This means that any endpoint can connect using native TCP connect and send/receive data using HTTPS or websocket.
+
+### Authentication and authorization
+
+There is only one known Authentication system named Synx Pass that has been implemented. Synx Pass is a token based system where the endpoint needs to refresh the token every three minutes to be able to send data to the network. Once a user has been registered in SynxPass they are allowed to participate in RTW and become members to various services by getting access to ghosts.
+
+### Data ownership and access control
+
+In Real Time Web data ownership is given by the ghostId. Whoever owns the ghostid also owns the data at this endpoint.
+
+Since a ghost also is represented in all stack layers, the ownership of the ghost in the application layer belongs to the service owner. This means that the service owner gets data related to the application layer. This includes morphed data and command data.
+
+Service owner can also give away his service by transferring ghostid zero to another person. Ghost id zero is the service (application layer ghostid).
+
+### Communication protocols
+
+The communication format that is currently supported by Synx BIOS is XML and JSON. When a client endpoint connects it can receive data in XML or in Json format. Default is XML but by issuing a synx command it can be set to json. There is no need to drop the connection, the format can be altered at runtime by another client that has domain ownership.
+
+RTW is protocol independent. The service owner decides his own protocol. Information about how data is structured and data model description can be found on each micropage.
+
+Micropage is a kind of a mini description of the service that the service owner can use to describe his service and data model. Any service provider needs to describe his own data schema availability. If the micropage lacks structured information about their service, it means that the service provider is not serious about his service offering and should not be linked to. Kind of a market driven validation of the service provider.
+
+### Interoperability
+
+In Semantic web there is a principle about linking a target data source and turning that data to fit the local data model. By doing so any links and data sources will be transformed (morphed) to work with the local data structure. When the local data model becomes a target for linking, the same principle applies for the one who sets up the link to transform the data to fit their local data model. If every service follows these principles the network as a whole becomes more sustainable to participate with intelligence to a network of intelligence.
+
+In the MAD model this principle is implemented as part of the horizontal distribution model:
+
+- To link a data source and morph the data to fit the local data model is called normalizer (to normalize) the data.
+- If the service offers to make changes to the data after the local data model has been updated it is called materializer (to materialize).
+
+For endpoints and their ghosts the interoperability is unlimited since the concept of kernelizer allows the endpoint/client to receive a self contain message before the data stream, allowing the application layer owner, to send a message to the receiver before the data from the data layer sends its data stream (channel). This allows the client to build its application and interface to manage the data without having a program that has been preinstalled on the client.
+
+This self-executed client then becomes dynamic and can set up its own protocol and template for managing his own data. This solves most of the interoperability in the network. It also enables the endpoint to be distributed in the network as an empty container where the program (kernelizer) and data (morphing) will be deployed dynamically at a later stage.
+
+### Security and trust model
+
+The MAD network does not natively persist data into databases or filesystems. It's designed to be a distributed machine network and a machine network naturally doesn't operate with trust issues the same way as between humans.
+
+The network is tokenized and is naturally limited to the system that issues the token and how this is mapped to the user or network resource. Any token system like BlockChain, Keycloak and systems that generate a token for identity can be used.
+
+### Reference implementation
+
+Current known implementation of MAD is Morph.space and this network uses SynxPass implementation from the company Synx (synx.tools).
+
+### Planned RealTimeWeb.org sections (no body copy yet)
+
+Pending — listed in the source as recommended sections, without written content.
+
+- Specifications and version history
+- Terminology and glossary
+- Research papers and technical resources
+- Governance and contribution process
+- FAQ
+
+## FAQ — RealTimeWeb.org
+
+### Answered questions
+
+### General understanding
+
+### What is the Real-Time Web?
+
+The Real-Time Web (RTW) is a framework and network architecture for connecting live physical and virtual resources across the Internet.
+
+It allows sensors, actuators, devices, applications, AI agents, services, data sources, and people to participate in the same distributed network. Instead of relying entirely on centralized platforms, copied datasets, and provider-specific APIs, RTW creates direct, bidirectional relationships between authorized network resources.
+
+RTW is designed to give each participating endpoint a persistent network identity while allowing data, access rules, and transformation logic to change dynamically. This makes it possible to build intelligent services around live data while preserving ownership and control at the original source.
+
+In simple terms, the World Wide Web connects documents and information. The Real-Time Web extends this model to connect live data, machines, services, and physical objects.
+
+### Is RTW a product, protocol, or network architecture?
+
+RTW is primarily a network architecture and technological framework. It defines principles and mechanisms for identifying resources, creating bidirectional relationships, exchanging live data, managing access, and coordinating different ownership layers.
+
+RTW is not a single application or standalone product. It is the broader architecture upon which compatible protocols, tools, services, and commercial products can be built.
+
+The RTW ecosystem therefore consists of several elements:
+
+- Real-Time Web defines the overall architecture, principles, and network model.
+- Morph Space provides the marketplace and environment through which users can establish domains, publish resources, and join the network.
+- Synx Tools provide the operational tools needed to configure, administer, secure, and maintain RTW services.
+- Individual applications, AI agents, devices, and services operate as participants within the network.
+
+This is comparable to the distinction between the World Wide Web as a general architecture and the browsers, servers, standards, and services built around it.
+
+### Why is a new network architecture needed?
+
+The Internet and the World Wide Web were not originally designed for a world containing billions of continuously changing sensors, actuators, autonomous machines, AI agents, and user-controlled data sources.
+
+Today, these resources are commonly connected through cloud platforms, APIs, middleware, and centralized databases. These technologies are useful, but each provider frequently implements its own interfaces, identity systems, data models, access rules, and integration methods.
+
+The result is a fragmented environment in which:
+
+- Live data is repeatedly copied and stored in different systems.
+- Applications depend on provider-specific APIs.
+- The same integrations must be developed many times.
+- Users often surrender control over their data to centralized platforms.
+- Devices and services cannot easily understand or communicate with one another.
+- Identity, authentication, payments, and trust are implemented separately for each service.
+- AI agents and autonomous machines lack a common environment for discovering and interacting with live resources.
+
+RTW addresses these challenges by providing a shared architecture for directly addressable, bidirectionally connected resources. Its purpose is to make live resources easier to discover, authorize, combine, transform, and use across organizational and technological boundaries.
+
+### How is RTW different from the World Wide Web?
+
+The World Wide Web is primarily designed around documents and resources that are identified by URLs and retrieved using requests. A hyperlink generally points in one direction, from one document or resource to another.
+
+The Real-Time Web extends this model from static or request-based resources to live, stateful network relationships.
+
+The principal differences include:
+
+World Wide Web: Primarily connects documents and published information
+Real-Time Web: Connects live physical and virtual resources
+
+World Wide Web: Hyperlinks are normally one-way
+Real-Time Web: Relationships can be bidirectional and bijective
+
+World Wide Web: Information is commonly retrieved through requests
+Real-Time Web: Authorized updates can be distributed as they occur
+
+World Wide Web: Data is often copied into applications and platforms
+Real-Time Web: Data can remain associated with its original source
+
+World Wide Web: Applications typically create their own sessions and integrations
+Real-Time Web: Network relationships can persist across participating services
+
+World Wide Web: Focuses mainly on websites, documents, and media
+Real-Time Web: Includes sensors, actuators, machines, AI agents, services, and people
+
+World Wide Web: Application providers commonly control both data and processing
+Real-Time Web: Data access and transformation logic can be controlled separately
+
+RTW does not remove the features of the existing Web. It adds a new network dimension for live data, distributed intelligence, machine interaction, and resource ownership.
+
+### Is RTW intended to replace the existing Internet?
+
+No. RTW is designed to operate on top of and alongside the existing Internet.
+
+The Internet provides the underlying global infrastructure for transporting data. The World Wide Web provides an established system for publishing, linking, and retrieving information. RTW uses this existing foundation while adding mechanisms for live, bidirectional relationships between physical and virtual resources.
+
+RTW is therefore intended to complement the current Internet and World Wide Web — not replace them.
+
+A conventional website can continue to deliver documents, images, and videos, while RTW can provide live data channels and interactions behind or alongside that website. Existing devices, applications, and services can gradually become RTW participants without requiring the entire Internet to be rebuilt.
+
+### Who created the Real-Time Web?
+
+The Real-Time Web was created by Norwegian technology inventor Paal Kristian Levang.
+
+Its architectural foundation, known as Morphic Architecture Design (MAD), was first introduced by Levang in 2008. The architecture grew out of his work in distributed systems, machine communication, the Internet of Things, semantic technologies, and real-time data exchange.
+
+Over several years, the concepts were developed and tested through research, prototypes, proof-of-concept systems, and commercial technology projects. This work eventually evolved into the Real-Time Web architecture and its associated network tools and services.
+
+RTW is now being introduced as an open technological ecosystem in which developers, organizations, device owners, service providers, and users can create and control their own network resources.
+
+### Trust, control and security
+
+### Who owns data exchanged through RTW?
+
+The data source is owned by the user that controls the endpoint and has registered it against the endpoint ghost. The ghost can be transferred to another person. By morphing the ghost against a secondary service the owner gives read access to the service provider. The read access can anytime be withdrawn by the owner.
+
+When a new Morphic service is created the owner of the service becomes the primary owner of all ghosts that are allocated on the service. When a user registered for the service the service owner transfers the ghostid to the user. When the user confirms the ownership, the ghost data layer now belongs to the user. Still the application layer on the ghost belongs to the service owner. The service owner has always access to a local copy of the data.
+
+### Where is data stored?
+
+Data is not natively stored in the network. Based on how the linking relationship is set up between the services, the data is dynamically morphed (transformed) into local data models along the linking path. If the data has been shared with a service the service owner may persist the data in that context he receives it (local data model).
+
+For data to pass through the network linking path and be consumed at the endpoint, the ownership of both the sender and receiver ghost has to have a user that owns or have read access to the data. However, the service provider that gains read access to multiple users' data may decide to share data with other users. The service provider needs to be trusted and responsible for how they use the data even when they have been approved individually by the users.
+
+The RTW network natively does not store data, but the service provider has the option to connect the database to their local ghosts.
+
+### How is access authorized?
+
+Morph Space is using Synx Pass for authorization.
+
+### How can access be revoked?
+
+Access can be revoked by using token revocation endpoint. The time-based revocation policies have been set and terminating user sessions can be activated through Synx runtime bios.
+
+### How does RTW protect identities and network resources?
+
+In RTW the concept of ghost has been introduced to the network stack. A ghost is a kind of a proxy for the network resource. Ghost operates in multi layers and can be accessed by the other stack layers at runtime. Each unique network resource is bijective connected to his own ghost. The ghost provides identity, behavior and context when active connection is present.
+
+### How does RTW support GDPR and data sovereignty?
+
+Supporting privacy and sovereignty the user needs to be able to control who has access to his data source and that his data is not persisted in the network space unless the user has agreed to it. RTW has been designed from the ground up to support this vision. By having ownership to a ghost and direct path to the original data source, the user can dynamically morph his ghost into any secondary service and share data with them.
+
+### Clarification that should appear prominently
+
+Needs team approval for placement and final wording
+The source states that this clarification should appear prominently:
+
+Real Time Web is a network concept and architecture. Morph Space is a commercial platform and reference implementation that allows people and organizations to join and use the network.
+
+### Unanswered / pending questions
+
+These questions are listed in the source FAQ plan. They do not yet have answers in the FAQ section. Related draft notes exist earlier in this file for some architecture topics; those notes still need team approval before they are used as public FAQ answers.
+
+### Architecture — unanswered
+
+- How does the RTW network topology work?
+- What does “bijective network architecture” mean?
+- How are services, devices and AI agents identified?
+- What is an RTW domain?
+- What is a real-time data channel?
+- How is data exchanged between network participants?
+- Does RTW require centralized servers or cloud services?
+- How does RTW reduce unnecessary network traffic?
+
+### Standards and implementation — unanswered
+
+- Is RTW an open specification?
+- Can other companies build compatible RTW implementations?
+- Which specifications are currently available?
+- How are specifications versioned?
+- How can researchers and developers contribute?
+- Is there a reference implementation?
+- Where can I find technical documentation?
+
+## Part 2. Morph.Space — marketplace, onboarding and commercial services
+
+Primary audience: new users, developers, companies, domain owners, service providers and data providers.
+
+Purpose: Help people understand what they can do, register, set up an RTW domain and begin using the network.
+
+The FAQ here should be practical and action-oriented. Avoid explaining the entire architecture. Link deeper conceptual questions to RealTimeWeb.org.
+
+The homepage should initially show only the 8–10 most important questions, with a link to a complete Help Center.
+
+Pending: which 8–10 homepage questions to show has not been decided in the source.
+
+### Recommended main sections
+
+- What Morph Space offers
+- Explore use cases
+- Register or connect a domain
+- Create an RTW identity
+- Set up a service or data channel
+- Discover services and network resources
+- Publish or subscribe to data
+- Marketplace
+- Pricing
+- Developer portal
+- Synx tools
+- Support
+- FAQ
+
+Pending: these sections are recommended headings only. Body copy was not provided.
+
+### Recommended Morph Space FAQ
+
+All questions in this section are unanswered / pending unless noted.
+
+### About Morph Space — unanswered
+
+- What is Morph Space?
+- How is Morph Space related to the Real Time Web?
+- Is Morph Space the same as RTW?
+- Who can use Morph Space?
+- What can I build or publish through Morph Space?
+
+### Joining the network — unanswered
+
+- How do I join the Real Time Web?
+- Do I need an existing domain name?
+- Can I register an RTW domain through Morph Space?
+- Can I connect a domain I already own?
+- How long does setup take?
+- Do I need technical experience?
+- Can an organization have multiple domains or administrators?
+
+### Building and connecting — unanswered
+
+- Can I connect an existing application or service?
+- Can I connect IoT devices and sensors?
+- Can AI agents use Morph Space?
+- Which programming languages are supported?
+- Is there an API or SDK?
+- Is there a sandbox for testing?
+- Where can I find examples and developer documentation?
+
+### Marketplace and monetization — unanswered
+
+- What can be offered through the marketplace?
+- Can I charge for access to real-time data?
+- Who determines the price of a data channel?
+- How are subscriptions and payments handled?
+- What fee does Morph Space charge?
+- Can access be free?
+- Who owns the data and services I publish?
+
+### Plans and support — unanswered
+
+- Is there a free plan?
+- What does Morph Space cost?
+- Can I upgrade or cancel at any time?
+- Are enterprise plans available?
+- Where can I get technical support?
+
+### How quickly can I get my morph_space up and running?
+
+Pending / placeholder only. The source lists this question with a Hostinger VPS setup article URL, not an RTW-specific answer:
+https://www.hostinger.com/support/8852211-how-soon-will-your-vps-be-set-up-and-ready-for-use-at-hostinger/
+
+- How do I report misuse or a security issue?
+
+## Part 3. Synx tools — product-specific operational documentation
+
+Rather than creating one large combined FAQ, the source recommends giving every Synx tool its own product page, documentation and FAQ.
+
+A central Synx documentation portal could include:
+
+- Getting started
+- Tool overview
+- Installation and configuration
+- Administration
+- Runtime operations
+- API reference
+- Troubleshooting
+- Security
+- Release notes
+- FAQ for each tool
+
+Pending: all Synx FAQ questions below are unanswered.
+
+### Shared Synx FAQ — unanswered
+
+- What are the Synx tools?
+- Which Synx tools do I need?
+- Are the tools included with Morph Space?
+- Can Synx tools run in my own environment?
+- Which operating systems and environments are supported?
+- How are the tools updated?
+- Can administration access be delegated?
+- Are operations and configuration changes logged?
+- Is there a command-line interface?
+- Is there an API?
+- Where can I report a technical problem?
+
+### Synx DNS FAQ — unanswered
+
+This section should focus on identity, naming, discovery and resolution:
+
+- What is Synx DNS?
+- How is it different from conventional DNS?
+- How does an RTW name resolve to a network resource?
+- Can I use my existing internet domain?
+- How do I create or update RTW records?
+- How quickly do changes take effect?
+- What happens if resolution fails?
+- Can names point to devices, services and AI agents?
+- How are naming conflicts prevented?
+- Can DNS administration be delegated?
+
+### Synx BIOS FAQ — unanswered
+
+This section should focus on configuration, ownership and network-resource control.
+
+Needs team approval / editorial rule: because “BIOS” has an established hardware meaning, the first answer should immediately explain the RTW meaning and distinguish it from a computer’s firmware BIOS.
+
+- What is Synx BIOS?
+- Why does an RTW domain need a BIOS?
+- What resources can be configured?
+- How are ownership and access layers defined?
+- How do I connect hardware or software resources?
+- Can configurations be exported or restored?
+- How are configuration changes versioned?
+- Who can modify the BIOS?
+- What happens if a configuration is incorrect?
+- Can Synx BIOS be deployed on-premises?
+
+### Synx Pass FAQ — unanswered
+
+This section should focus on identity, authentication and authorization:
+
+- What is Synx Pass?
+- How are users, services and machines authenticated?
+- What is the difference between identity and access permission?
+- How do I grant access to a data channel?
+- Can permissions be time-limited?
+- Can access be revoked immediately?
+- How are machine and AI-agent identities managed?
+- Does Synx Pass support existing identity providers?
+- How are credentials and tokens protected?
+- What should I do if credentials are compromised?
+
+### Runtime and administration FAQ — unanswered
+
+If there is a separate runtime operations tool, its FAQ should address:
+
+- How do I see whether my RTW services are running?
+- How do I start, stop or restart a service?
+- How do I inspect active data channels?
+- Where can I view logs and events?
+- How do I monitor traffic and resource consumption?
+- How are failures and connection problems reported?
+- Can operations be automated through an API?
+- Can I configure alerts?
+- How do I roll back a deployment?
+- What information should I provide when contacting support?
+
+## Editorial rules
+
+Avoid duplicating long answers across the three locations. Give each question a canonical home:
+
+- Conceptual questions belong on RealTimeWeb.org.
+- Account, marketplace and onboarding questions belong on Morph.Space.
+- Configuration and operational questions belong in Synx documentation.
+
+## Suggested implementation order
+
+1. Establish a shared RTW terminology and glossary.
+2. Define the boundary between RTW, Morph Space and each Synx tool.
+3. Publish the initial RealTimeWeb.org overview and architecture.
+4. Create the Morph Space onboarding journey.
+5. Add the 8–10 homepage FAQs that remove onboarding objections.
+6. Build separate documentation and FAQs for each Synx tool.
+7. Add troubleshooting articles based on actual support requests.
+8. Review search terms and unanswered questions after launch.
+
+## Crucial distinction
+
+Real Time Web defines the network. Morph Space provides a way to join and participate in it. Synx tools provide the controls needed to configure, secure and operate it.

@@ -1,0 +1,5 @@
+{
+  "name": "realtimeweb-org",
+  "root": "content/docs",
+  "note": "MDX content tree intended to migrate to Fumadocs source later. Navigation is mirrored in lib/navigation.ts."
+}

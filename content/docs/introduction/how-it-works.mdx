@@ -1,0 +1,37 @@
+---
+title: How it works
+description: Live data channels, user-controlled sources, and coexistence with the World Wide Web.
+status: published
+---
+
+The Real-Time Web is intended to provide a more flexible way to build Internet of Everything systems.
+
+Today, sensor data is commonly collected through proprietary APIs and middleware before being copied into databases or cloud platforms. Applications must then request the stored data through platform-specific interfaces. This creates additional infrastructure, repeated integrations, duplicated data, and dependency on intermediaries.
+
+## Direct live channels
+
+RTW proposes an alternative. Live data channels can connect the original data source directly to the appropriate web service, application, AI agent, device, or web page for a particular user instance.
+
+<ConceptRtw />
+
+The Real-Time Web does not need to replace the World Wide Web. It can operate alongside it in symbiosis. The conventional Web remains well suited to documents, published information, and media, while RTW adds a dynamic network for live resources, machine interaction, and continuously changing data.
+
+## Bidirectional addressing
+
+Each participating endpoint has a unique corresponding representation in the network. Authorized updates can be distributed as they occur, rather than being retrieved only through a request.
+
+Data can remain associated with its original source. Network relationships can persist across participating services. Data access and transformation logic can be controlled separately.
+
+## Four layers in every exchange
+
+Even a simple action like sending a message involves all four MAD layers, often with different owners. See [Morphic Architecture](/docs/architecture).
+
+<MessageExample />
+
+## Shared state
+
+MAD introduces Ghost Space: a shared-memory representation of a network resource through which infrastructure, security, applications, and owners can cooperate without one party owning the entire stack. See [Ghost Space](/docs/architecture/ghost-space).
+
+<GhostBijection />
+
+<EcosystemLink to="morph" />

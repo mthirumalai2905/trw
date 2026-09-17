@@ -1,0 +1,120 @@
+---
+title: FAQ
+description: Answered questions from the RealTimeWeb.org source, plus pending items.
+status: published
+---
+
+<ClarificationBanner />
+
+Every FAQ answer is structured as a direct first sentence, a short explanation, and a link to a guide.
+
+## General understanding
+
+### What is the Real-Time Web?
+
+The Real-Time Web (RTW) is a framework and network architecture for connecting live physical and virtual resources across the Internet.
+
+It allows sensors, actuators, devices, applications, AI agents, services, data sources, and people to participate in the same distributed network. Instead of relying entirely on centralized platforms, copied datasets, and provider-specific APIs, RTW creates direct, bidirectional relationships between authorized network resources.
+
+RTW is designed to give each participating endpoint a persistent network identity while allowing data, access rules, and transformation logic to change dynamically.
+
+In simple terms, the World Wide Web connects documents and information. The Real-Time Web extends this model to connect live data, machines, services, and physical objects.
+
+[Introduction](/docs/introduction)
+
+### Is RTW a product, protocol, or network architecture?
+
+RTW is primarily a network architecture and technological framework.
+
+It defines principles and mechanisms for identifying resources, creating bidirectional relationships, exchanging live data, managing access, and coordinating different ownership layers. It is not a single application or standalone product.
+
+[Vision](/docs/introduction/vision)
+
+### Why is a new network architecture needed?
+
+The Internet and the World Wide Web were not originally designed for billions of continuously changing sensors, actuators, autonomous machines, AI agents, and user-controlled data sources.
+
+These resources are commonly connected through cloud platforms, APIs, middleware, and centralized databases, each with its own interfaces and identity systems.
+
+[Why Real Time Web?](/docs/introduction/why)
+
+### How is RTW different from the World Wide Web?
+
+The World Wide Web is primarily designed around documents and resources that are identified by URLs and retrieved using requests. A hyperlink generally points in one direction.
+
+The Real-Time Web extends this model from static or request-based resources to live, stateful network relationships.
+
+<WwwVsRtw />
+
+[How it works](/docs/introduction/how-it-works)
+
+### Is RTW intended to replace the existing Internet?
+
+No. RTW is designed to operate on top of and alongside the existing Internet.
+
+The Internet transports data. The World Wide Web publishes and retrieves information. RTW adds live, bidirectional relationships between physical and virtual resources.
+
+### Who created the Real-Time Web?
+
+The Real-Time Web was created by Norwegian technology inventor Paal Kristian Levang. Morphic Architecture Design was first introduced in 2008.
+
+[Vision and principles](/docs/introduction/vision)
+
+## Trust, control and security
+
+### Who owns data exchanged through RTW?
+
+The data source is owned by the user that controls the endpoint and has registered it against the endpoint ghost. The ghost can be transferred to another person. Morphing the ghost against a secondary service gives read access that the owner can withdraw.
+
+When a Morphic service is created, the service owner is primary owner of allocated ghosts. After registration and confirmation, the data layer belongs to the user; the application layer remains with the service owner.
+
+[Resource / Ownership Layer](/docs/architecture/resource)
+
+### Where is data stored?
+
+Data is not natively stored in the network. Data is dynamically morphed into local data models along the linking path. A service owner may persist data in the local context they receive. The network natively does not store data, but a service provider may connect a database to local ghosts.
+
+### How is access authorized?
+
+Morph Space is using Synx Pass for authorization.
+
+[SynxPass](/docs/architecture/synxpass)
+
+### How can access be revoked?
+
+Access can be revoked by using a token revocation endpoint. Time-based revocation policies have been set and terminating user sessions can be activated through Synx runtime BIOS.
+
+### How does RTW protect identities and network resources?
+
+A ghost is a proxy for the network resource, operating in multiple layers, bijectively connected to the endpoint. It provides identity, behavior, and context when an active connection is present.
+
+[Ghost Space](/docs/architecture/ghost-space)
+
+### How does RTW support GDPR and data sovereignty?
+
+The user needs to control who has access to the data source, and data is not persisted in the network space unless the user has agreed to it. Ownership of a ghost and a direct path to the original source lets the user morph the ghost into a secondary service and share data with them.
+
+## Pending questions
+
+These are listed in the source FAQ plan and do not yet have answers. Related draft notes exist for some architecture topics and still need team approval before they are used as public FAQ answers.
+
+Architecture, unanswered:
+
+- How does the RTW network topology work?
+- What does “bijective network architecture” mean?
+- How are services, devices and AI agents identified?
+- What is an RTW domain?
+- What is a real-time data channel?
+- How is data exchanged between network participants?
+- Does RTW require centralized servers or cloud services?
+- How does RTW reduce unnecessary network traffic?
+
+Standards and implementation, unanswered:
+
+- Is RTW an open specification?
+- Can other companies build compatible RTW implementations?
+- Which specifications are currently available?
+- How are specifications versioned?
+- How can researchers and developers contribute?
+- Is there a reference implementation?
+- Where can I find technical documentation?

@@ -1,0 +1,19 @@
+---
+title: Resource and Ownership Layer
+description: Who generates a resource and who controls whether it may be accessed.
+status: published
+---
+
+The resource and ownership layer is the person, organization, machine, or device that generates or owns the resource and controls whether it may be accessed or shared.
+
+<MadLayers />
+
+In Real Time Web, data ownership is given by the `ghostId`. Whoever owns the ghostId also owns the data at this endpoint.
+
+When a new Morphic service is created, the owner of the service becomes the primary owner of all ghosts that are allocated on the service. When a user is registered for the service, the service owner transfers the ghostId to the user. When the user confirms ownership, the ghost data layer belongs to the user. The application layer on the ghost still belongs to the service owner.
+
+The data source is owned by the user that controls the endpoint and has registered it against the endpoint ghost. The ghost can be transferred to another person. By morphing the ghost against a secondary service the owner gives read access to the service provider. The read access can anytime be withdrawn by the owner.
+
+Data is not natively stored in the network. The RTW network natively does not store data, but a service provider has the option to connect a database to their local ghosts.
+
+<EcosystemLink to="morph" />

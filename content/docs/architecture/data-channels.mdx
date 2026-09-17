@@ -1,0 +1,19 @@
+---
+title: Data Channels
+description: Linking paths that collect live sources into a channel of data.
+status: draft
+---
+
+Data channels is a way to explain how a linking path is used to collect various data sources into a channel of data.
+
+One example: a service that collects temperature from various manufacturers of temperature sensors. By linking to various temperature sensor services you collect potential temperature readings from different sensors that update their local ghosts.
+
+<DataChannelMorph />
+
+When a service owner is morphing a user's ghost into his primary service, the data that is collected for that specific user is available in the data channel of the user primary ghost of the local service. Since the user has ownership in both ends of the network value chain the data can be consumed by the endpoint that is bijective connected to the specific ghosts.
+
+Only data with a valid morphed ghost is to receive data.
+
+The linking path can be complex and only when the ghost at the endpoints is owned by the same user will the data be consumed and received at the endpoint.
+
+Each service or node in the linking path operates on local data structures and is only able to persist and access data at local context. How data is morphed or used in the linking path is unknown outside the local service or domain. There is no centralized API or database in use when building RTW services.

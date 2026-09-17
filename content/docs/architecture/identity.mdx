@@ -1,0 +1,19 @@
+---
+title: Identity
+description: Addressing, ghost allocation, and optional authentication systems.
+status: draft
+---
+
+There is no centralized API or database in use when building RTW services.
+
+When ghosts are allocated for the first time, all allocated ghosts are owned by the service owner. Once a new user has been registered to the service the service owner can transfer the ghost id to the user. When the user approves the transfer the user now controls the data layer of the specific ghost.
+
+The service itself is also a ghost in the application layer. Independently from the data layer, ownership of the service can also be transferred to another person. There are four layers of ownership in the vertical communication stack that independently from each other can be changing ownership.
+
+MAD has been designed using roles and responsibility patterns, so what kind of authentication system is used is optional when constructing an RTW network. Currently there is only one valid implementation in use named SynxPass (part of Synx Tools) that is used by Morph Space.
+
+<SynxPassFlow />
+
+<SpecStatus status="proposal">
+  How services, devices, and AI agents are identified at the protocol level is not specified in the current source.
+</SpecStatus>
